@@ -89,7 +89,7 @@ class PostController extends Controller
         $posts->tags()->attach(request('tags'));
         $posts->save();
 
-        $posts->notify(new \App\Notifications\PostPublished());
+        // $posts->notify(new \App\Notifications\PostPublished());
 
         session()->flash('success', 'The post was created');
 

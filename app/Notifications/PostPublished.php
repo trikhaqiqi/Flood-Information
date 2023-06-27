@@ -48,13 +48,13 @@ class PostPublished extends Notification
             ->line('Thank you for using our application!');
     }
 
-    public function toTelegram($post)
-    {
-        return TelegramMessage::create()
-            ->to('@informasibanjirr')
-            ->content("{$post->title}, lokasi dititik {$post->location}
-                {$post->subject}. postingan bisa dilihat di http://127.0.0.1:8000/post");
-    }
+    // public function toTelegram($post)
+    // {
+    //     return TelegramMessage::create()
+    //         ->to('@informasibanjirr')
+    //         ->content("{$post->title}, lokasi dititik {$post->location}
+    //             {$post->subject}. postingan bisa dilihat di http://127.0.0.1:8000/post");
+    // }
 
     /**
      * Get the array representation of the notification.
